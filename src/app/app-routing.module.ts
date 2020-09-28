@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { UpcomingMatchesComponent } from './upcoming-matches/upcoming-matches.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'upcoming',
+    component: UpcomingMatchesComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

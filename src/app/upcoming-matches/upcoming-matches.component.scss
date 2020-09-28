@@ -1,0 +1,28 @@
+.mat-card {
+  margin-bottom: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 217, 255),
+    whitesmoke,
+    rgb(0, 255, 234)
+  );
+}
+.mat-card-title {
+  text-align: center;
+}
+.mat-card-subtitle {
+  text-align: center;
+}
+.mat-card-content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.left {
+  text-align: center;
+  align-items: flex-start;
+}
+.right {
+  text-align: center;
+  align-items: flex-end;
+}

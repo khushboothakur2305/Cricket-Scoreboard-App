@@ -1,0 +1,43 @@
+<mat-tab-group mat-align-tabs="start">
+  <mat-tab label="Ongoing Matches">
+    <div >
+      <br />
+      <mat-card *ngFor="let match of ongoingMatches">
+        <mat-card-title>{{ match.date | date }}</mat-card-title>
+        <mat-card-subtitle> {{ match.type }}<br /></mat-card-subtitle>
+
+        <mat-card-content>
+          <h1 class="left">Team 1 <br />{{ match["team-1"] }}</h1>
+          <br />
+          <h1 class="right">Team 2<br />{{ match["team-2"] }}</h1>
+          <br />
+        </mat-card-content>
+        <mat-card-subtitle
+          ><p>Toss</p>
+          {{ match.toss_winner_team }}<br
+        /></mat-card-subtitle> </mat-card
+      ><br />
+    </div>
+  </mat-tab>
+  <mat-tab label="Upcomming Matches"
+    ><div >
+      <br />
+      <mat-card *ngFor="let match of UpcommingMatches">
+        <mat-card-title>{{ match.date | date }}</mat-card-title>
+        <mat-card-subtitle> {{ match.type }}<br /></mat-card-subtitle>
+
+        <mat-card-content>
+          <h1 class="left">Team 1 <br />{{ match["team-1"] }}</h1>
+          <br />
+          <h1 class="right">Team 2<br />{{ match["team-2"] }}</h1>
+          <br />
+        </mat-card-content>
+        <mat-card-subtitle
+          ><p>Toss</p>
+          {{ match.toss_winner_team }}<br
+        /></mat-card-subtitle>
+      </mat-card>
+    </div>
+    <br
+  /></mat-tab>
+</mat-tab-group>
