@@ -8,7 +8,7 @@ import { upcommingMatches } from '../upcoming-matches/Interface/upcomming-matche
 })
 export class UpcomingMatchesComponent implements OnInit {
   apikey = 'apikey=';
-  key = 'AXnrIdLK7SWj5r8YxhiJ6SKWwW12';
+  key = '';
   UpcommingMatches: upcommingMatches[] = [];
   ongoingMatches: upcommingMatches[] = [];
   constructor(private http: HttpClient) {}
