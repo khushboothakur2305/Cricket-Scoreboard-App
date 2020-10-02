@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UpcomingMatchesComponent } from './upcoming-matches/upcoming-matches.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModuleModule } from './module/material-module/material-module.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [AppComponent, UpcomingMatchesComponent],
   imports: [
@@ -15,6 +16,7 @@ import { MaterialModuleModule } from './module/material-module/material-module.m
     BrowserAnimationsModule,
     HttpClientModule,
     MaterialModuleModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
