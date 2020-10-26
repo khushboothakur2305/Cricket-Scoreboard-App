@@ -12,7 +12,7 @@ export class UpcomingMatchesComponent implements OnInit {
   key = 'AXnrIdLK7SWj5r8YxhiJ6SKWwW12';
   UpcommingMatches: upcommingMatches[] = [];
   ongoingMatches: upcommingMatches[] = [];
-  constructor(private http: HttpClient,private router:Router ) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
     this.http
