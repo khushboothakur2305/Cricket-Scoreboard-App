@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { upcommingMatches } from '../upcoming-matches/Interface/upcomming-matches';
 @Component({
   selector: 'app-upcoming-matches',
@@ -8,14 +9,12 @@ import { upcommingMatches } from '../upcoming-matches/Interface/upcomming-matche
 })
 export class UpcomingMatchesComponent implements OnInit {
   apikey = 'apikey=';
-  key = '';
+  key = 'AXnrIdLK7SWj5r8YxhiJ6SKWwW12';
   UpcommingMatches: upcommingMatches[] = [];
   ongoingMatches: upcommingMatches[] = [];
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient,private router:Router ) {}
 
   ngOnInit(): void {
-    console.log(`https://cricapi.com/api/matches/?${this.apikey}${this.key}`);
-
     this.http
       .get<{
         creditsLeft: number;
@@ -35,5 +34,8 @@ export class UpcomingMatchesComponent implements OnInit {
         console.log('upcommin', this.UpcommingMatches);
         console.log('ongoing', this.ongoingMatches);
       });
+  }
+  score(uniqueId) {
+    console.log(uniqueId);
   }
 }
