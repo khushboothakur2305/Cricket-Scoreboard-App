@@ -10,6 +10,7 @@
         fxLayout="column"
         fxLayoutAlign="center center"
         *ngFor="let match of ongoingMatches"
+        (click)="score(match.unique_id)"
       >
         <div>
           <br />
@@ -36,6 +37,7 @@
         fxLayout="column"
         fxLayoutAlign="center center"
         *ngFor="let match of UpcommingMatches"
+        (click)="score(match.unique_id)"
       >
         <br />
         <mat-card>

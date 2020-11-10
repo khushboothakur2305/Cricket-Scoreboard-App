@@ -35,7 +35,6 @@ export class UpcomingMatchesComponent implements OnInit {
   }
   score(uniqueId) {
     console.log('hello');
-
     console.log(uniqueId);
   }
 }
