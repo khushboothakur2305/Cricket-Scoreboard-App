@@ -4,8 +4,9 @@
     fxLayout="column"
     fxLayoutAlign="center"
   >
-    <mat-tab label="Ongoing Matches">
-      <div
+    <mat-tab label="Upcomming Matches"
+      ><div
+        style="background-color: lightgray"
         fxLayout="column"
         fxLayoutAlign="center center"
         *ngFor="let match of ongoingMatches"
@@ -31,6 +32,7 @@
     </mat-tab>
     <mat-tab label="Upcomming Matches"
       ><div
+        style="background-color: lightgray"
         fxLayout="column"
         fxLayoutAlign="center center"
         *ngFor="let match of UpcommingMatches"

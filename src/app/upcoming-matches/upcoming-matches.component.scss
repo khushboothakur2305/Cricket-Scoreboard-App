@@ -1,18 +1,17 @@
 .mat-card {
   width: 80%;
   margin-bottom: 20px;
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 217, 255),
-    whitesmoke,
-    rgb(0, 255, 234)
-  );
+  background-color: black;
+  border: 1px solid black;
+  color: white;
 }
 .mat-card-title {
   text-align: center;
+  color: white;
 }
 .mat-card-subtitle {
   text-align: center;
+  color: white;
 }
 .mat-card-content {
   display: flex;
