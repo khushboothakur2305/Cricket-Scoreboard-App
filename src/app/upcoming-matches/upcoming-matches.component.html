@@ -5,28 +5,38 @@
     fxLayoutAlign="center"
   >
     <mat-tab label="Ongoing Matches">
-      <div fxLayout="column" fxLayoutAlign="center center">
-        <br />
-        <mat-card *ngFor="let match of ongoingMatches">
-          <mat-card-title>{{ match.date | date }}</mat-card-title>
-          <mat-card-subtitle> {{ match.type }}<br /></mat-card-subtitle>
-          <mat-card-content>
-            <h1 class="left">Team 1 <br />{{ match["team-1"] }}</h1>
-            <br />
-            <h1 class="right">Team 2<br />{{ match["team-2"] }}</h1>
-            <br />
-          </mat-card-content>
-          <mat-card-subtitle
-            ><p>Toss</p>
-            {{ match.toss_winner_team }}<br
-          /></mat-card-subtitle> </mat-card
-        ><br />
+      <div
+        fxLayout="column"
+        fxLayoutAlign="center center"
+        *ngFor="let match of ongoingMatches"
+      >
+        <div>
+          <br />
+          <mat-card>
+            <mat-card-title>{{ match.date | date }}</mat-card-title>
+            <mat-card-subtitle> {{ match.type }}<br /></mat-card-subtitle>
+            <mat-card-content>
+              <h1 class="left">Team 1 <br />{{ match["team-1"] }}</h1>
+              <br />
+              <h1 class="right">Team 2<br />{{ match["team-2"] }}</h1>
+              <br />
+            </mat-card-content>
+            <mat-card-subtitle
+              ><p>Toss</p>
+              {{ match.toss_winner_team }}<br
+            /></mat-card-subtitle> </mat-card
+          ><br />
+        </div>
       </div>
     </mat-tab>
     <mat-tab label="Upcomming Matches"
-      ><div fxLayout="column" fxLayoutAlign="center center">
+      ><div
+        fxLayout="column"
+        fxLayoutAlign="center center"
+        *ngFor="let match of UpcommingMatches"
+      >
         <br />
-        <mat-card *ngFor="let match of UpcommingMatches">
+        <mat-card>
           <mat-card-title>{{ match.date | date }}</mat-card-title>
           <mat-card-subtitle> {{ match.type }}<br /></mat-card-subtitle>
 

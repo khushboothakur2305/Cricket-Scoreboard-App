@@ -31,11 +31,11 @@ export class UpcomingMatchesComponent implements OnInit {
             this.UpcommingMatches.push(matchStart);
           }
         });
-        console.log('upcommin', this.UpcommingMatches);
-        console.log('ongoing', this.ongoingMatches);
       });
   }
   score(uniqueId) {
+    console.log('hello');
+
     console.log(uniqueId);
   }
 }
