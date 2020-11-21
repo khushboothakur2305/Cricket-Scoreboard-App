@@ -8,12 +8,13 @@ import { upcommingMatches } from '../upcoming-matches/Interface/upcomming-matche
   styleUrls: ['./upcoming-matches.component.scss'],
 })
 export class UpcomingMatchesComponent implements OnInit {
-  apikey = 'apikey=';
+  apikey = '';
   key = '';
   UpcommingMatches: upcommingMatches[] = [];
   ongoingMatches: upcommingMatches[] = [];
   constructor(private http: HttpClient, private router: Router) {}
-  // AXnrIdLK7SWj5r8YxhiJ6SKWwW12
+  //apikey2305=
+  // AXnrIdLK7SWj5r8YxhiJ6SKWwW122305
   ngOnInit(): void {
     this.http
       .get<{
